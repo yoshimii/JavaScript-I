@@ -128,6 +128,12 @@ let BMWAndAudi = inventory.filter(function(car){
     return ((car.car_make == "Audi") || (car.car_make == "BMW"));
 });
 console.log(BMWAndAudi);
+console.table(BMWAndAudi);
+
+
+let json = JSON.stringify(BMWAndAudi);
+console.log(json);
+
 
 //Arrow function conversion
 let BMWAndAudiArrow = inventory.filter(car => (car.car_make === "Audi") || (car.car_make === "BMW"));
